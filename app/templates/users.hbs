@@ -1,0 +1,8 @@
+<h1>USERS</h1>
+{{#each model as |user| }}
+{{#link-to 'users.user' user}} {{user.firstName}} {{/link-to}}<br>
+  {{user.lastName}}<br>
+  {{user.email}}<br><br>
+
+{{/each}}
+{{outlet}}
